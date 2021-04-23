@@ -1,0 +1,39 @@
+h1 {
+    color: darkred;
+   outline: 0.5rem solid khaki;
+   margin: 2rem;
+    padding: 1rem;
+}
+h2{
+   position: relative;
+    top: -80px;
+    left: 300px;
+}
+h3 {
+   position: relative;
+    top: -124px;
+    left: 600px;
+}
+#thirdDiv {
+   height: 600px;
+   width: 400px;
+   background-color:khaki;
+   padding: 50px;
+   border: 1px solid darkred;
+   position: relative;
+    top: -100px;
+    left: 900px;
+}
+#spanId {
+   font-size:18px;
+   position: relative;
+    top: -164px;
+    left: 1000px;
+}
+a {
+   position: relative;
+    top: -100px;
+}
+*{
+   background-color: darkgray;
+}
