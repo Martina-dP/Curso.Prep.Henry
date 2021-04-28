@@ -1,0 +1,167 @@
+h3 {
+    position: relative;
+    left: 240px;
+    font-family: Helvetica;
+    border-bottom: 0.4rem solid #AF7B35;
+}
+#h3id { 
+    position: relative;
+    left: 100px;
+    font-family: Helvetica;
+}
+h1{
+    position: relative;
+    margin-left: 526px;
+    font-size: 52px;
+    top: 42px;
+    font-family: 'Trebuchet MS';
+}
+h4 {
+    position: relative;
+    margin-left: 600px;
+    font-size: 22px;
+    font-family: Verdana;
+    font-weight:lighter;
+    top: 12px;
+}
+.conocimientos {
+    position: relative;
+    top: -88px;
+    border: 2px solid black;
+    margin-left: 440px;
+}
+.habilidades {
+    position: relative;
+    left: 20px;
+    font-family: Arial;
+}
+.academia {
+    position: relative;
+    top: 15px;
+    margin-left: 440px;
+    font-family: Arial;
+}
+nav {
+    position: relative;
+    top: -1200px;
+    left: 30px;
+    width: 350px;
+    height: 1112px;
+    border: 0.2rem solid #212F3C;
+    background-color: #2E4053; 
+    color: white;
+    font-family: Arial;
+}
+.contacto {
+    position: relative;
+    left: 20px;
+    top: -74px;
+}
+.datos {
+    position: relative;
+    left: 80px;
+    top: -70px;
+}
+.programas {
+    position: relative;
+    left: 20px;
+    top: -120px;
+}
+.idioma {
+    position: relative;
+    left: 20px;
+    top: -60px;
+}
+.columna-1 {
+    position: relative;
+    left: 40px;
+    top: -42px;
+}
+.columna-2 {
+    position: relative;
+    left: 170px;
+    top: -110px;
+}
+.columna-uno{
+    position: relative;
+   
+}
+.columna-dos{
+    position: relative;
+    left: 200px;
+    top: -67px;
+}
+.columna-tres {
+    position: relative;
+    top: -45px;
+   
+}
+.columna-cuatro {
+    position: relative;
+    left: 200px;
+    top: -112px;
+}
+.trabajos {
+    position: relative;
+    top: -80px;
+    border: 2px solid black;
+    margin-left: 440px;
+    font-family: Arial;
+}
+.descripcion {
+    position: relative;
+    left: 0px;
+    margin-left: 440px;
+    font-family: Arial;
+}
+.titulo-laboral {
+    font-size: 18px;
+  margin-left: 20px;
+}
+.titulo {
+    outline: 0.2rem solid peru;
+    background-color:#AF7B35;
+    height: 200px;
+}
+body{
+    background-color: beige;
+}
+.descripciones {
+    position: relative;
+    left: 60px;
+}
+.extra {
+    position: relative;
+    left: 20px;
+    top: -45px;
+}
+.texto {
+    position: relative;
+    left: 5px;
+    top: -44px;
+}
+.foto {
+    position: relative;
+    left: 50px;
+    top: -150px;
+}
+.uno {
+    position: relative;
+    left: 20px;
+    top: -207px;
+}
+.dos {
+    position: relative;
+    left: 20px;
+    top: -196px;
+}
+.tres {
+    position: relative;
+    left: 20px;
+    top: -184px;
+}
+.cuatro {
+    position: relative;
+    left: 20px;
+    top: -170px;
+}
