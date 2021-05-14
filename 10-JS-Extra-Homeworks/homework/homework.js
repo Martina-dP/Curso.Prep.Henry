@@ -10,7 +10,9 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  return Object.entries(objeto);
 }
+
 
 
 function numberOfCharacters(string) {
@@ -18,6 +20,33 @@ function numberOfCharacters(string) {
   //en formato par clave-valor.
   //Ej: Recibe ---> "adsjfdsfsfjsdjfhacabcsbajda" || Devuelve ---> { a: 5, b: 2, c: 2, d: 4, f: 4, h:1, j: 4, s: 5 } 
   //Escribe tu código aquí
+  var letra;
+  var nuevoObjeto = {};
+  var cantidad = 0;
+  var encontrado = false;
+  var m = 0;
+  for (var i=0; i < string.length; i++){
+    letra = string.charAt(i);
+    while(m < nuevoObjeto.length && encontrado === false){
+      if(key === letra){
+        encontrado = true;
+      } 
+    } 
+    if(encontrado === false){
+      for (var j=0; j < string.length; j++){
+        if(letra === string.charAt(j)){
+          cantidad ++;
+        } 
+      }
+      nuevoObjeto[letra] = cantidad;
+      encontrado = false;
+      m = 0;
+      cantidad = 0;
+    }
+  } 
+  return nuevoObjeto;
+
+
 }
 
 
@@ -26,6 +55,19 @@ function capToFront(s) {
   //al principio de la palabra.
   //Ejemplo: soyHENRY -> HENRYsoy
   //Escribe tu código aquí
+  var sp = s.split("");
+    var caps = []; 
+    var lower = []
+    for (var i = 0; i < sp.length; i++)
+        {
+            if (sp[i] == sp[i].toUpperCase()){              
+                caps.push(sp[i]);
+            }
+            if (sp[i] == sp[i].toLowerCase()){
+                lower.push(sp[i]);
+            }
+        }
+    return caps.join("").concat(lower.join(""));
 }
 
 
@@ -34,15 +76,31 @@ function asAmirror(str) {
   //Escribe una función que tome la frase recibida y la devuelva de modo tal que se pueda leer de izquierda a derecha 
   //pero con cada una de sus palabras invertidas, como si fuera un espejo.
   //Ej: Recibe ---> "The Henry Challenge is close!" || Devuelve ---> "ehT yrneH egnellahC si !esolc"
-  //Escribe tu código aquí
-} 
-
+  //Escribe tu código aquíString.prototype.reverse = function() {
+    var nuevoString='';
+    var arr = [];
+    var palabra;
+    arr = str.split(' ');
+    palabra = arr[0].split('').reverse().join('');
+    nuevoString = palabra
+    for (var i=1; i<arr.length; i++){
+      palabra = arr[i].split('').reverse().join('');
+      nuevoString = nuevoString + ' ' + palabra;
+    }
+    return nuevoString;
+}
 
 function capicua(numero){
   //Escribe una función, la cual recibe un número y determina si es o no capicúa.
   //La misma debe retornar: "Es capicua" si el número se número que se lee igual de 
   //izquierda a derecha que de derecha a izquierda. Caso contrario retorna "No es capicua"
   //Escribe tu código aquí
+  if(numero == numero.toString().split('').reverse().join('')){
+    respuesta = "Es capicua";
+  } else{
+    respuesta = "No es capicua";
+  }
+  return respuesta;
 }
 
 
@@ -50,6 +108,18 @@ function deleteAbc(cadena){
   //Define una función que elimine las letras "a", "b" y "c" de la cadena dada 
   //y devuelva la versión modificada o la misma cadena, en caso de contener dichas letras.
   //Escribe tu código aquí
+  var modificado = [];
+  var letra;
+  modificado = cadena.split("");
+for (var i=0; i<modificado.length; i++){
+    letra = modificado[i];
+    if (letra === "a" || letra === "b" || letra === "c"){
+    modificado.splice(i,1);
+    i--;
+   } 
+  }
+  cadena = modificado.join("");
+  return cadena;
 }
 
 
@@ -57,6 +127,7 @@ function sortArray(arr) {
   //La función recibe una matriz de strings. Ordena la matriz en orden creciente de longitudes de cadena
   //Ej: Recibe ---> ["You", "are", "beautiful", "looking"] || Devuelve ---> [“You", "are", "looking", "beautiful"]
   //Escribe tu código aquí
+  return arr.sort((a, b) => a.length - b.length);
 }
 
 
@@ -66,6 +137,17 @@ function buscoInterseccion(arreglo1, arreglo2){
   //Si no tienen elementos en común, retornar un arreglo vacío.
   //Aclaración: los arreglos no necesariamente tienen la misma longitud
   //Escribe tu código aquí  
+  var nuevoArray = [];
+  var numero;
+  for (var i=0; i < arreglo1.length; i++) {
+      numero = arreglo1[i];
+    for (var m=0; m < arreglo2.length; m++){
+      if (arreglo2[m] === numero){
+        nuevoArray.push(numero);
+      }
+    }
+  }
+  return nuevoArray;
 }
 
 
